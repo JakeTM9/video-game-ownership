@@ -39,6 +39,3 @@ jobs:
     - run: npm ci
     - run: cd ./video-game-ownership && npm ci && npm run deploy
     #- run: npm test
-  deploy:
-    runs-on: ubuntu-latest
-    needs: build
