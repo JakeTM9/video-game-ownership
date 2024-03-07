@@ -27,5 +27,5 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm ci
-    - run: cd ./video-game-ownership && npm ci && npm run build
+    - run: cd ./video-game-ownership && npm ci && npm run deploy
     #- run: npm test
