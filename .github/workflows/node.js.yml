@@ -29,5 +29,5 @@ jobs:
     - run: npm ci
     - run: cd ./video-game-ownership
     - run: npm ci
-    - run: npm run deploy
+    - run: npm run
     #- run: npm test
