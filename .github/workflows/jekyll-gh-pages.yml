@@ -38,7 +38,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          source: ./video-game-ownership/build
+          source: ./video-game-ownership/build/*
           destination: ./_site
 
   # Deployment job
