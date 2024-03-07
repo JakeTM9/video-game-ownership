@@ -29,9 +29,10 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: git config --global user.email $MY_EMAIL
-    - run: git config --global user.name $MY_NAME
-    - run: git remote set-url origin https://$MY_NAME:${{ secrets.GH_SECRET }}@github.com/JakeTM9/video-game-ownership.git
+      run: |
+        git config --global user.email $MY_EMAIL
+        git config --global user.name $MY_NAME
+        git remote set-url origin https://$MY_NAME:${{ secrets.GH_SECRET }}@github.com/JakeTM9/video-game-ownership.git
     - run: npm ci
     - run: cd ./video-game-ownership && npm ci && npm run deploy
     #- run: npm test
