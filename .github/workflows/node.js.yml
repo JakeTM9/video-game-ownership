@@ -25,6 +25,7 @@ jobs:
       env:
         MY_EMAIL: wardega.jakob@gmail.com
         MY_NAME: jaketm9
+      uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
