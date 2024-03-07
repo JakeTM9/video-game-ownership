@@ -20,6 +20,7 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
+    - uses: actions/checkout@v3
     - name: Use Node.js ${{ matrix.node-version }}
       env:
         MY_EMAIL: wardega.jakob@gmail.com
@@ -28,12 +29,9 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-      run: |
-        git config --global user.email $MY_EMAIL
-        git config --global user.name $MY_NAME
-        git remote set-url origin https://$MY_NAME:${{ secrets.GH_SECRET }}@github.com/JakeTM9/video-game-ownership.git
-        npm ci
-        cd ./video-game-ownership
-        npm ci
-        npm run deploy
+    - run: git config --global user.email $MY_EMAIL
+    - run: git config --global user.name $MY_NAME
+    - run: git remote set-url origin https://$MY_NAME:${{ secrets.GH_SECRET }}@github.com/JakeTM9/video-game-ownership.git
+    - run: npm ci
+    - run: cd ./video-game-ownership && npm ci && npm run deploy
     #- run: npm test
