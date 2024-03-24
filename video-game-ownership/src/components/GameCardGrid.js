@@ -4,7 +4,7 @@ import GameCard from './GameCard';
 const CardGrid = (props) => (
   <div className="cardGrid">
     {props.data.map((game, index) => {
-        return <GameCard/>;
+        return <GameCard gameData = {game} index = {index}/>;
     })}
   </div>
 )
