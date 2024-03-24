@@ -1,0 +1,27 @@
+.card {
+    align-items: center;
+    background: white;
+    border-radius: 10px;
+    
+    display: flex;
+    justify-content: center;
+    img {
+        border-radius: 10px;
+        width: 200px;
+    }
+  }
+@media (max-width: 800px) {
+    .card {
+        align-items: center;
+        background: white;
+        border-radius: 10px;
+        
+        display: flex;
+        justify-content: center;
+        img {
+            border-radius: 10px;
+            width: 125px;
+        }
+      }
+    
+}

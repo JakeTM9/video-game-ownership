@@ -1,0 +1,19 @@
+.cardGrid {
+    display: grid;
+    gap: calc(5px + 2vmin);
+    grid-template-columns: repeat(auto-fit, 200px);
+    justify-content: center;
+    background-color: #282c34;
+    color: white;
+}
+
+@media (max-width: 800px) {
+    .cardGrid {
+        display: grid;
+        gap: calc(5px + 2vmin);
+        grid-template-columns: repeat(auto-fit, 125px);
+        justify-content: center;
+        background-color: #282c34;
+        color: white;
+    }
+}
