@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/video-game-ownership/static/css/main.02dc4fff.css",
-    "main.js": "/video-game-ownership/static/js/main.7918a807.js",
+    "main.js": "/video-game-ownership/static/js/main.568931aa.js",
     "static/js/453.31fc5023.chunk.js": "/video-game-ownership/static/js/453.31fc5023.chunk.js",
     "static/media/logo.svg": "/video-game-ownership/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/video-game-ownership/index.html",
     "main.02dc4fff.css.map": "/video-game-ownership/static/css/main.02dc4fff.css.map",
-    "main.7918a807.js.map": "/video-game-ownership/static/js/main.7918a807.js.map",
+    "main.568931aa.js.map": "/video-game-ownership/static/js/main.568931aa.js.map",
     "453.31fc5023.chunk.js.map": "/video-game-ownership/static/js/453.31fc5023.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.02dc4fff.css",
-    "static/js/main.7918a807.js"
+    "static/js/main.568931aa.js"
   ]
 }
